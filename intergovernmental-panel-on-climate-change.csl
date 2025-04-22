@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
   <info>
-  <!-- This IPCC version is a tiny iteration upon the great work done on the APA 6th edition csl file. -->
+    <!-- This IPCC version is a tiny iteration upon the great work done on the APA 6th edition csl file. -->
     <title>Intergovernmental Panel on Climate Change</title>
     <title-short>IPCC</title-short>
     <id>http://www.zotero.org/styles/intergovernmental-panel-on-climate-change</id>
     <link href="http://www.zotero.org/styles/intergovernmental-panel-on-climate-change" rel="self"/>
+    <link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation"/>
     <author>
       <name>Maxime Chambonnet</name>
       <email>maxime.chambonnet@universite-paris-saclay.fr</email>
@@ -19,9 +20,9 @@
       <email>yugdeep.bangar@deltares.nl</email>
     </author>
     <category citation-format="author-date"/>
-    <category field="climate science"/>
+    <category field="geology"/>
     <category field="generic-base"/>
-    <updated>2025-04-22T16:08:41+00:00</updated>
+    <updated>2025-04-22T10:08:41+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
