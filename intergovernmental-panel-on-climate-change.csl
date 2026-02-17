@@ -2092,11 +2092,12 @@
       <text variable="locator"/>
     </group>
   </macro>
-  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name-with-initials">
+  <citation et-al-min="2" et-al-use-first="1" disambiguate-add-year-suffix="true">
+  <!-- disambiguate-add-names="true" disambiguate-add-givenname="true" givenname-disambiguation-rule="primary-name-with-initials" collapse="year"-->
     <sort>
-      <key macro="author-sort" names-min="3" names-use-first="1"/>
       <key macro="date-sort-group" sort="ascending"/>
       <key macro="date-sort" sort="ascending"/>
+      <key macro="author-sort" names-min="3" names-use-first="1"/>
       <key variable="status"/>
     </sort>
     <layout prefix="(" suffix=")" delimiter="; ">
