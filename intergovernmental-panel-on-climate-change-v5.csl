@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
   <info>
-    <title>Intergovernmental Panel on Climate Change v4</title>
+    <title>Intergovernmental Panel on Climate Change v5</title>
     <title-short>IPCC</title-short>
     <id>http://www.zotero.org/styles/intergovernmental-panel-on-climate-change</id>
     <link href="http://www.zotero.org/styles/intergovernmental-panel-on-climate-change" rel="self"/>
@@ -2090,8 +2090,9 @@
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="false" disambiguate-add-givenname="true" cite-group-delimiter=", " collapse="year" year-suffix-delimiter=", " givenname-disambiguation-rule="by-cite">
     <sort>
       <key macro="date-sort" sort="ascending"/>
-      <key macro="author-sort" names-min="3" names-use-first="1"/>
-      <key variable="year-suffix" sort="ascending"/>
+      <key macro="author-sort" names-min="1" names-use-first="1"/>
+      <key variable="status"/>
+      <key macro="title"/>
     </sort>
     <layout prefix="(" suffix=")" delimiter="; ">
       <group delimiter=", ">
@@ -2104,7 +2105,7 @@
   </citation>
   <bibliography hanging-indent="true" et-al-min="6" et-al-use-first="1" line-spacing="1" entry-spacing="0">
     <sort>
-      <key macro="author-sort"/>
+      <key macro="author-sort" names-min="1" names-use-first="1"/>
       <key macro="date-sort-group" sort="ascending"/>
       <key macro="date-sort" sort="ascending"/>
       <key variable="status"/>
