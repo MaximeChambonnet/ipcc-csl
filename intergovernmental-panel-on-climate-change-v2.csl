@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
   <info>
-    <!-- This IPCC version is a tiny iteration upon the great work done on the APA 6th edition csl file. -->
-    <title>Intergovernmental Panel on Climate Change</title>
+    <title>Intergovernmental Panel on Climate Change v2</title>
     <title-short>IPCC</title-short>
     <id>http://www.zotero.org/styles/intergovernmental-panel-on-climate-change</id>
     <link href="http://www.zotero.org/styles/intergovernmental-panel-on-climate-change" rel="self"/>
+    <link href="http://www.zotero.org/styles/apa-6th-edition" rel="template"/>
     <link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation"/>
     <author>
-      <name>Maxime Chambonnet</name>
-      <email>maxime.chambonnet@universite-paris-saclay.fr</email>
-    </author>
-    <author>
-      <name>Mukesh Kumar Gupta</name>
-      <email>mukeshg@smu.edu.sg</email>
-    </author>
-    <author>
-      <name>Yugdeep Bangar</name>
-      <email>yugdeep.bangar@deltares.nl</email>
+      <name>Brenton M. Wiernik</name>
+      <email>zotero@wiernik.org</email>
     </author>
     <category citation-format="author-date"/>
-    <category field="geology"/>
+    <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2025-04-22T10:08:41+00:00</updated>
+    <updated>2024-07-09T20:08:41+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -300,20 +292,19 @@
           </else>
         </choose>
       </else-if>
-      <else>
-        <names variable="composer" delimiter=" &amp; ">
-          <name form="short" and="text" delimiter=", " initialize-with=". "/>
+	  <else>
+        <names variable="composer" delimiter=" &amp; " et-al-min="2" et-al-use-first="1">
+          <name form="short" name-as-sort-order="all" and="text" delimiter=", " initialize-with=". " sort-separator=" "/>
+          <et-al font-style="italic"/>
           <substitute>
-            <names variable="author"/>
+            <names variable="author"/>	
             <names variable="illustrator"/>
-            <!-- TODO: Replace `delimiter` with `collapse` to combine names variables when that becomes available. -->
             <choose>
               <if type="broadcast">
                 <names variable="script-writer director"/>
               </if>
             </choose>
             <names variable="director"/>
-            <!-- TODO: Replace `delimiter` with `collapse` to combine names variables when that becomes available. -->
             <names variable="guest host"/>
             <names variable="producer"/>
             <choose>
@@ -341,7 +332,7 @@
           </substitute>
         </names>
       </else>
-    </choose>
+	  </choose>
   </macro>
   <macro name="author-sort">
     <choose>
@@ -2092,12 +2083,12 @@
       <text variable="locator"/>
     </group>
   </macro>
-  <citation et-al-min="2" et-al-use-first="1" disambiguate-add-year-suffix="true">
-  <!-- disambiguate-add-names="true" disambiguate-add-givenname="true" givenname-disambiguation-rule="primary-name-with-initials" collapse="year"-->
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="false" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name">
     <sort>
+      <key macro="author-sort" names-min="3" names-use-first="1"/>
+	  <key variable="issued" sort="ascending"/>
       <key macro="date-sort-group" sort="ascending"/>
       <key macro="date-sort" sort="ascending"/>
-      <key macro="author-sort" names-min="3" names-use-first="1"/>
       <key variable="status"/>
     </sort>
     <layout prefix="(" suffix=")" delimiter="; ">
